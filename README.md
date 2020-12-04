@@ -1,12 +1,17 @@
 # AES
-C implementation of AES 128bits
 
-# Setup
-Compilation :
-	- make
+Encryption with AES 128bits in C
 
-Execution :
-	sh crypt.sh file1.txt file2.txt
-avec :	file1 : fichier texte à chiffrer
-		file2 : fichier chiffré
-	
+## Compilation
+
+In a shell bash :
+
+```bash
+make
+```
+
+## Usage
+
+```bash
+sh crypt.sh file1.txt file2.txt
+```
