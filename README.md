@@ -13,5 +13,5 @@ make
 ## Usage
 
 ```bash
-sh crypt.sh file1.txt file2.txt
+sh crypt.sh cleartext.txt ciphertext.txt
 ```
