@@ -1,9 +1,6 @@
 rm result.txt
 rm ./../ciphertext.txt
 
-#input_file = $1
-#output_file = $2
-
 hexdump -e '16/1 "%02x " "\n"' ./$1 >> result.txt
 
 cat result.txt | while  read ligne ; do
