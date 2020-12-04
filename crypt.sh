@@ -1,10 +1,10 @@
 rm result.txt
 rm ./../ciphertext.txt
 
-make clean
-make all
+#input_file = $1
+#output_file = $2
 
-hexdump -e '16/1 "%02x " "\n"' cleartext.txt >> result.txt
+hexdump -e '16/1 "%02x " "\n"' ./$1 >> result.txt
 
 cat result.txt | while  read ligne ; do
 	if [ ${#ligne} != 47 ]
@@ -15,7 +15,7 @@ cat result.txt | while  read ligne ; do
 				ligne=$ligne" "$a
 		done
 	else
-  		./AES $ligne >> ./../ciphertext.txt
+  		./AES $ligne >> ./$2
   	fi
 done
 
