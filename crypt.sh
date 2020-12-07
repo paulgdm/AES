@@ -1,5 +1,5 @@
 rm result.txt
-rm ./../ciphertext.txt
+rm ./ciphertext.txt
 
 hexdump -e '16/1 "%02x " "\n"' ./$1 >> result.txt
 
@@ -11,6 +11,7 @@ cat result.txt | while  read ligne ; do
 			do
 				ligne=$ligne" "$a
 		done
+		./AES $ligne >> ./$2
 	else
   		./AES $ligne >> ./$2
   	fi
