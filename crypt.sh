@@ -1,5 +1,4 @@
-rm result.txt
-rm ./ciphertext.txt
+rm ./$2
 
 hexdump -e '16/1 "%02x " "\n"' ./$1 >> result.txt
 
