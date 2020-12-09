@@ -13,6 +13,15 @@ make
 ## Usage
 
 ```bash
+sh crypt.sh file1.txt file2.txt
+```
+with : 
+* file1.txt : cleartext
+* file2.txt : ciphertext
+
+## Exemple
+
+```bash
 sh crypt.sh cleartext.txt ciphertext.txt
 ```
 
